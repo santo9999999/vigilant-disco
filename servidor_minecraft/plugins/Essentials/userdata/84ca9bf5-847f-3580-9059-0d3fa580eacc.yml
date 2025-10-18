@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.54.107.59
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1760295181011
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1760297389368
+  login: 1760314635177
+money: '0'
+last-account-name: Rompe_hogar
+lastlocation:
+  world: f208ce6b-73a8-4e74-b3e9-087637bf75fd
+  world-name: world
+  x: 8.5
+  y: 71.0
+  z: -5.5
+  yaw: -9.901204109191895
+  pitch: 16.344844818115234
+logoutlocation:
+  world: f208ce6b-73a8-4e74-b3e9-087637bf75fd
+  world-name: world
+  x: 866.948166007727
+  y: 68.8500000178814
+  z: 2005.9019048794898
+  yaw: -52.22349166870117
+  pitch: 7.503937721252441

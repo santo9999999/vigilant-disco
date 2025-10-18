@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.16.247.169
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1760412653886
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1760422247695
+  login: 1760420210101
+money: '0'
+last-account-name: dieguito
+logoutlocation:
+  world: f208ce6b-73a8-4e74-b3e9-087637bf75fd
+  world-name: world
+  x: -4.311108860395609
+  y: 64.0
+  z: -1288.9914834799358
+  yaw: 113.10121154785156
+  pitch: 76.4999771118164
+lastlocation:
+  world: f208ce6b-73a8-4e74-b3e9-087637bf75fd
+  world-name: world
+  x: 57.58161235144972
+  y: 73.9375
+  z: -1286.0118398087163
+  yaw: 77.70014190673828
+  pitch: 2.099916458129883

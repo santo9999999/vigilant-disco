@@ -1,0 +1,12 @@
+xp: 35.0
+health: 0.0
+hunger: 10
+saturation: 0.0
+location:
+  world: world
+  x: -154.5
+  y: 87.0
+  z: 188.2
+logType: DEATH
+version: v1_20_R1
+deathReason: LAVA

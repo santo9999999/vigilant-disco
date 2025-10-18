@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.114.178.205
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1760385345913
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1760385569117
+  login: 1760384501167
+money: '0'
+last-account-name: OnlyBanzell
+lastlocation:
+  world: 933a581d-59e1-4cc6-bc00-19315a7a5687
+  world-name: world_nether
+  x: 49.4275525765433
+  y: 15.0
+  z: -229.58057562753947
+  yaw: 85.42509460449219
+  pitch: 23.936382293701172
+logoutlocation:
+  world: f208ce6b-73a8-4e74-b3e9-087637bf75fd
+  world-name: world
+  x: 66.32291665673256
+  y: 73.0
+  z: -1292.6998009892027
+  yaw: -125.73419189453125
+  pitch: 27.221858978271484

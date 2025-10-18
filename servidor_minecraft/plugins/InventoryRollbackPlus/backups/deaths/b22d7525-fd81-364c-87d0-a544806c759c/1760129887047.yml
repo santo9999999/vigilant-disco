@@ -1,0 +1,12 @@
+xp: 0.0
+health: 0.0
+hunger: 20
+saturation: 0.0
+location:
+  world: world
+  x: 318.6
+  y: 63.0
+  z: -13.3
+logType: DEATH
+version: v1_20_R1
+deathReason: ENTITY_ATTACK (Rompe_hogar)
