@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.13.236.87
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1760243014347
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1760243553753
+  login: 1760235610305
+money: '0'
+last-account-name: the_blade27
+logoutlocation:
+  world: f208ce6b-73a8-4e74-b3e9-087637bf75fd
+  world-name: world
+  x: 57.70110718636755
+  y: 73.0
+  z: -1289.8487435006607
+  yaw: -87.75003814697266
+  pitch: 19.500003814697266
+lastlocation:
+  world: f208ce6b-73a8-4e74-b3e9-087637bf75fd
+  world-name: world
+  x: 33.325465414231566
+  y: 71.5625
+  z: -1294.0592163370002
+  yaw: -42.150146484375
+  pitch: -0.1499992161989212

@@ -1,0 +1,12 @@
+xp: 0.0
+health: 0.0
+hunger: 19
+saturation: 0.0
+location:
+  world: world
+  x: -513.4
+  y: 44.1
+  z: -1256.4
+logType: DEATH
+version: v1_20_R1
+deathReason: DROWNING

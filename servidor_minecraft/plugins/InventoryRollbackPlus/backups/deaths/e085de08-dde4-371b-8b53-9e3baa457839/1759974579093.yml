@@ -1,0 +1,12 @@
+xp: 0.0
+health: 0.0
+hunger: 14
+saturation: 0.0
+location:
+  world: world
+  x: -35.1
+  y: 60.9
+  z: 53.2
+logType: DEATH
+version: v1_20_R1
+deathReason: ENTITY_ATTACK (ATLAS1329)

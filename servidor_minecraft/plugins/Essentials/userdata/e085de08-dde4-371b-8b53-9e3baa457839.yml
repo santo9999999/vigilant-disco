@@ -1,0 +1,63 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.133.1.147
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1761599765529
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1761599834465
+  login: 1761599737111
+money: '0'
+last-account-name: _ItsSam
+logoutlocation:
+  world: f208ce6b-73a8-4e74-b3e9-087637bf75fd
+  world-name: world
+  x: -104.40205555105938
+  y: 63.0
+  z: -1182.5194849287413
+  yaw: -85.28729248046875
+  pitch: 26.399951934814453
+lastlocation:
+  world: f208ce6b-73a8-4e74-b3e9-087637bf75fd
+  world-name: world
+  x: 3.992571195235143
+  y: 71.0
+  z: -17.57074118168137
+  yaw: 85.96136474609375
+  pitch: 8.348432540893555
+homes:
+  casa:
+    world: f208ce6b-73a8-4e74-b3e9-087637bf75fd
+    world-name: world
+    x: -108.48768385740104
+    y: 63.0
+    z: -1182.3533917971756
+    yaw: -97.88720703125
+    pitch: 19.949951171875
+  portal:
+    world: f208ce6b-73a8-4e74-b3e9-087637bf75fd
+    world-name: world
+    x: -1431.3562409037925
+    y: -16.0
+    z: -1585.3218944431565
+    yaw: 163.520751953125
+    pitch: 25.0504207611084
+  aldea:
+    world: f208ce6b-73a8-4e74-b3e9-087637bf75fd
+    world-name: world
+    x: 86.52182339636404
+    y: 71.0
+    z: 2031.9736334499266
+    yaw: -129.13900756835938
+    pitch: 13.196890830993652

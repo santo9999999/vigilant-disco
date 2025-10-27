@@ -1,0 +1,548 @@
+[19:32:52] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[19:32:55] [ServerMain/INFO]: Loaded 7 recipes
+[19:32:56] [Server thread/INFO]: Starting minecraft server version 1.20
+[19:32:56] [Server thread/INFO]: Loading properties
+[19:32:56] [Server thread/INFO]: This server is running Paper version git-Paper-17 (MC: 1.20) (Implementing API version 1.20-R0.1-SNAPSHOT) (Git: c287e92)
+[19:32:56] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[19:32:56] [Server thread/INFO]: Using 4 threads for Netty based IO
+[19:32:56] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[19:32:56] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[19:32:56] [Server thread/INFO]: Default game type: SURVIVAL
+[19:32:56] [Server thread/INFO]: Generating keypair
+[19:32:57] [Server thread/INFO]: Starting Minecraft server on *:25565
+[19:32:57] [Server thread/INFO]: Using epoll channel type
+[19:32:57] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[19:32:57] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[19:32:58] [Server thread/ERROR]: Fatal error trying to convert WorldEdit v7.3.9+6959-7adf70b:com/sk89q/worldedit/bukkit/WorldEditPlugin.class
+java.lang.IllegalArgumentException: Unsupported class file major version 65
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199) ~[asm-9.4.jar:9.4]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180) ~[asm-9.4.jar:9.4]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166) ~[asm-9.4.jar:9.4]
+	at org.bukkit.craftbukkit.v1_20_R1.util.Commodore.convert(Commodore.java:171) ~[paper-1.20.jar:git-Paper-17]
+	at org.bukkit.craftbukkit.v1_20_R1.util.CraftMagicNumbers.processClass(CraftMagicNumbers.java:403) ~[paper-1.20.jar:git-Paper-17]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:206) ~[paper-api-1.20-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:592) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:155) ~[paper-api-1.20-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:150) ~[paper-api-1.20-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:76) ~[paper-api-1.20-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:123) ~[paper-1.20.jar:git-Paper-17]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.jar:git-Paper-17]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.jar:git-Paper-17]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.jar:git-Paper-17]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.jar:git-Paper-17]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:430) ~[paper-1.20.jar:git-Paper-17]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.jar:git-Paper-17]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1101) ~[paper-1.20.jar:git-Paper-17]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:318) ~[paper-1.20.jar:git-Paper-17]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[19:32:58] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'worldedit-bukkit-7.3.9.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: com/sk89q/worldedit/bukkit/WorldEditPlugin has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:127) ~[paper-1.20.jar:git-Paper-17]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.jar:git-Paper-17]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.jar:git-Paper-17]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.jar:git-Paper-17]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.jar:git-Paper-17]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:430) ~[paper-1.20.jar:git-Paper-17]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.jar:git-Paper-17]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1101) ~[paper-1.20.jar:git-Paper-17]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:318) ~[paper-1.20.jar:git-Paper-17]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.UnsupportedClassVersionError: com/sk89q/worldedit/bukkit/WorldEditPlugin has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1017) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:229) ~[paper-api-1.20-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:592) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:155) ~[paper-api-1.20-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:150) ~[paper-api-1.20-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:76) ~[paper-api-1.20-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:123) ~[paper-1.20.jar:git-Paper-17]
+	... 9 more
+[19:32:58] [Server thread/ERROR]: Fatal error trying to convert nonchat v1.5.4:com/nonxedy/nonchat/Nonchat.class
+java.lang.IllegalArgumentException: Unsupported class file major version 65
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199) ~[asm-9.4.jar:9.4]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180) ~[asm-9.4.jar:9.4]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166) ~[asm-9.4.jar:9.4]
+	at org.bukkit.craftbukkit.v1_20_R1.util.Commodore.convert(Commodore.java:171) ~[paper-1.20.jar:git-Paper-17]
+	at org.bukkit.craftbukkit.v1_20_R1.util.CraftMagicNumbers.processClass(CraftMagicNumbers.java:403) ~[paper-1.20.jar:git-Paper-17]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:206) ~[paper-api-1.20-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:592) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:155) ~[paper-api-1.20-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:150) ~[paper-api-1.20-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:76) ~[paper-api-1.20-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:123) ~[paper-1.20.jar:git-Paper-17]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.jar:git-Paper-17]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.jar:git-Paper-17]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.jar:git-Paper-17]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.jar:git-Paper-17]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:430) ~[paper-1.20.jar:git-Paper-17]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.jar:git-Paper-17]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1101) ~[paper-1.20.jar:git-Paper-17]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:318) ~[paper-1.20.jar:git-Paper-17]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[19:32:58] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'nonchat-1.5.4.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: com/nonxedy/nonchat/Nonchat has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:127) ~[paper-1.20.jar:git-Paper-17]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.jar:git-Paper-17]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.jar:git-Paper-17]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.jar:git-Paper-17]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.jar:git-Paper-17]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:430) ~[paper-1.20.jar:git-Paper-17]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.jar:git-Paper-17]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1101) ~[paper-1.20.jar:git-Paper-17]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:318) ~[paper-1.20.jar:git-Paper-17]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.UnsupportedClassVersionError: com/nonxedy/nonchat/Nonchat has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1017) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:229) ~[paper-api-1.20-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:592) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:155) ~[paper-api-1.20-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:150) ~[paper-api-1.20-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:76) ~[paper-api-1.20-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:123) ~[paper-1.20.jar:git-Paper-17]
+	... 9 more
+[19:32:58] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.5.0
+[19:32:58] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.0 is now loaded. Registering protocol transformers and injecting...
+[19:32:59] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[19:32:59] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[19:32:59] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.0
+[19:33:00] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[19:33:00] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.6
+[19:33:00] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.2
+[19:33:00] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.3.2
+[19:33:00] [Server thread/INFO]: [InventoryRollbackPlus] Loading server plugin InventoryRollbackPlus v1.7.7
+[19:33:00] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[19:33:00] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.0
+[19:33:01] [Server thread/INFO]:         __    
+[19:33:01] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.0
+[19:33:01] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[19:33:01] [Server thread/INFO]: 
+[19:33:01] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[19:33:01] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[19:33:02] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[19:33:02] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[19:33:02] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 2188ms)
+[19:33:02] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[19:33:02] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[19:33:02] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[19:33:02] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[19:33:03] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[19:33:03] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[19:33:03] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[19:33:03] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[19:33:03] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[19:33:03] [Server thread/INFO]: Preparing level "world"
+[19:33:03] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[19:33:04] [Server thread/INFO]: Time elapsed: 891 ms
+[19:33:04] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[19:33:05] [Server thread/INFO]: Time elapsed: 172 ms
+[19:33:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[19:33:05] [Server thread/INFO]: Time elapsed: 184 ms
+[19:33:05] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.0
+[19:33:05] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20-1.20.1 (763)
+[19:33:05] [Server thread/WARN]: [ViaVersion] Please update your Java runtime to at least Java 21 (your version is 17.0.16).
+[19:33:05] [Server thread/WARN]: [ViaVersion] At some point in the future, ViaVersion will no longer be compatible with this version of Java.
+[19:33:05] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.6
+[19:33:06] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[19:33:06] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.2
+[19:33:07] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[19:33:08] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[19:33:08] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[19:33:08] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected Legacy InventoryView Abstract Class ABI Provider as the provider for InventoryViewProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected Reflection Sync Commands Provider as the provider for SyncCommandsProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected 1.9-1.20.4 Potion Meta Provider as the provider for PotionMetaProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected Legacy Damage Event Provider as the provider for DamageEventProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected Legacy Biome Name Provider as the provider for BiomeNameProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[19:33:08] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[19:33:09] [Server thread/INFO]: [Essentials] Loaded 43880 items from items.json.
+[19:33:09] [Server thread/INFO]: [Essentials] Using locale en
+[19:33:09] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[19:33:10] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[19:33:10] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[19:33:10] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[19:33:10] [Server thread/INFO]: [TAB] Enabling TAB v5.3.2
+[19:33:12] [Server thread/INFO]: [TAB] Enabled in 561ms
+[19:33:12] [Server thread/INFO]: [InventoryRollbackPlus] Enabling InventoryRollbackPlus v1.7.7
+[19:33:12] [Server thread/INFO]: [InventoryRollbackPlus] Attempting support for version: git-Paper-17 (MC: 1.20)
+[19:33:12] [Server thread/INFO]: [InventoryRollbackPlus] Using CraftBukkit version: v1_20_R1
+[19:33:12] [Server thread/INFO]: [InventoryRollbackPlus] Inventory backup data is set to save to: YAML
+[19:33:12] [Server thread/INFO]: [InventoryRollbackPlus] bStats are enabled
+[19:33:12] [Server thread/INFO]: [InventoryRollbackPlus] Tests completed: 5, Skipped: 0, Failed: 0
+[19:33:12] [Server thread/INFO]: [InventoryRollbackPlus] All tests passed successfully.
+[19:33:12] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[19:33:12] [Server thread/INFO]: Running delayed init tasks
+[19:33:12] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[19:33:12] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[19:33:12] [Craft Scheduler Thread - 4 - InventoryRollbackPlus/INFO]: [InventoryRollbackPlus] Checking for updates...
+[19:33:12] [Craft Scheduler Thread - 0 - Essentials/INFO]: [Essentials] Fetching version information...
+[19:33:12] [Craft Scheduler Thread - 5 - Vault/INFO]: [Vault] Checking for Updates ... 
+[19:33:13] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: player [2.0.8]
+[19:33:13] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: server [2.7.3]
+[19:33:13] [Server thread/INFO]: 2 placeholder hook(s) registered! 1 placeholder hook(s) have an update available.
+[19:33:13] [Server thread/INFO]: Done (16.925s)! For help, type "help"
+[19:33:13] [Server thread/INFO]: Timings Reset
+[19:33:13] [Craft Scheduler Thread - 5 - Vault/INFO]: [Vault] No new version available
+[19:33:13] [Craft Scheduler Thread - 4 - InventoryRollbackPlus/INFO]: 
+===============================================================================
+A minor update to InventoryRollbackPlus is available!
+Download at https://www.spigotmc.org/resources/inventoryrollbackplus-1-8-1-16-x.85811/
+(current: 1.7.7, latest: 1.7.8)
+===============================================================================
+
+[19:33:13] [User Authenticator #0/INFO]: UUID of player dieguito is b22d7525-fd81-364c-87d0-a544806c759c
+[19:33:13] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.5.1, you're on: 5.5.0
+[19:33:21] [Server thread/INFO]: dieguito[/127.243.140.69:59421] logged in with entity id 2 at ([world]-4.311108860395609, 64.0, -1288.9914834799358)
+[19:33:21] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 8840ms or 176 ticks behind
+[19:33:22] [Server thread/INFO]: [+] dieguito
+[19:33:26] [User Authenticator #0/INFO]: UUID of player _ItsSam is e085de08-dde4-371b-8b53-9e3baa457839
+[19:33:26] [Server thread/INFO]: _ItsSam[/127.133.1.147:54763] logged in with entity id 505 at ([world]-119.93014518214605, 69.0, -1176.300000011921)
+[19:33:27] [Server thread/INFO]: [+] _ItsSam
+[19:33:43] [Async Chat Thread - #1/INFO]: [Not Secure] <_ItsSam> asd
+[19:33:44] [Async Chat Thread - #1/INFO]: [Not Secure] <dieguito> hay dios mio
+[19:33:54] [Server thread/INFO]: _ItsSam issued server command: /tpa dieguito
+[19:34:03] [Server thread/INFO]: dieguito issued server command: /tpaccept
+[19:34:18] [Server thread/INFO]: _ItsSam issued server command: /pl
+[19:34:46] [Server thread/INFO]: _ItsSam issued server command: /home aldea
+[19:36:52] [Server thread/INFO]: _ItsSam issued server command: /gamemode creative
+[19:40:31] [Async Chat Thread - #2/INFO]: [Not Secure] <_ItsSam> MARICA
+[19:40:35] [Async Chat Thread - #3/INFO]: [Not Secure] <_ItsSam> SE ME ROMPIÓ EL CASCO
+[19:42:09] [Async Chat Thread - #5/INFO]: [Not Secure] <dieguito> labubu
+[19:46:52] [Server thread/INFO]: _ItsSam issued server command: /gamemode survival
+[19:53:24] [Server thread/INFO]: _ItsSam issued server command: /gamemode creative
+[19:53:44] [Async Chat Thread - #6/INFO]: [Not Secure] <_ItsSam> asd
+[19:53:54] [Async Chat Thread - #7/INFO]: [Not Secure] <dieguito> pipi chiquito
+[19:54:19] [Server thread/INFO]: _ItsSam issued server command: /gamemode creative
+[19:59:17] [Server thread/INFO]: _ItsSam issued server command: /gamemode survival
+[20:00:23] [Server thread/INFO]: _ItsSam issued server command: /fly
+[20:01:13] [Server thread/INFO]: _ItsSam issued server command: /gamemode creative
+[20:03:45] [Server thread/INFO]: _ItsSam issued server command: /gamemode spectator
+[20:04:03] [Server thread/INFO]: _ItsSam issued server command: /gamemode survival
+[20:05:08] [Server thread/INFO]: _ItsSam issued server command: /gamemode creative
+[20:06:09] [Server thread/INFO]: _ItsSam issued server command: /version nonchat
+[20:07:46] [Server thread/INFO]: _ItsSam lost connection: Disconnected
+[20:07:46] [Server thread/INFO]: [-] _ItsSam
+[20:11:36] [Async Chat Thread - #9/INFO]: [Not Secure] <dieguito> kkkkkkkkkkkkkk
+[20:12:39] [User Authenticator #1/INFO]: UUID of player _ItsSam is e085de08-dde4-371b-8b53-9e3baa457839
+[20:12:39] [Server thread/INFO]: _ItsSam[/127.133.1.147:47225] logged in with entity id 10509 at ([world]25.30000001192093, 58.200000047683716, 1952.0610047492605)
+[20:12:39] [Server thread/INFO]: [+] _ItsSam
+[20:12:49] [Server thread/INFO]: _ItsSam issued server command: /gamemode spectator
+[20:12:55] [Server thread/INFO]: _ItsSam issued server command: /gamemode creative
+[20:19:32] [Async Chat Thread - #10/INFO]: [Not Secure] <_ItsSam> a que hora vas al gym
+[20:19:38] [Async Chat Thread - #11/INFO]: [Not Secure] <_ItsSam> con sebastian
+[20:19:41] [Async Chat Thread - #10/INFO]: [Not Secure] <dieguito> que te importa
+[20:19:45] [Async Chat Thread - #10/INFO]: [Not Secure] <_ItsSam> malparido
+[20:19:49] [Async Chat Thread - #11/INFO]: [Not Secure] <dieguito> no se
+[20:19:57] [Async Chat Thread - #11/INFO]: [Not Secure] <dieguito> como a las 5
+[20:32:00] [Async Chat Thread - #12/INFO]: [Not Secure] <dieguito> dios esta haciendo pipi
+[20:32:04] [Async Chat Thread - #13/INFO]: [Not Secure] <_ItsSam> gay
+[20:34:24] [Async Chat Thread - #14/INFO]: [Not Secure] <_ItsSam> no duermas
+[20:34:28] [Async Chat Thread - #15/INFO]: [Not Secure] <_ItsSam> njodaaa
+[20:34:30] [Async Chat Thread - #14/INFO]: [Not Secure] <dieguito> xd
+[20:34:41] [Server thread/INFO]: _ItsSam issued server command: /time set night
+[20:34:50] [Async Chat Thread - #15/INFO]: [Not Secure] <dieguito> tu si eres marica
+[20:34:55] [Async Chat Thread - #14/INFO]: [Not Secure] <_ItsSam> no duermas
+[20:34:56] [Async Chat Thread - #15/INFO]: [Not Secure] <_ItsSam> cole
+[20:36:53] [Server thread/WARN]: _ItsSam moved too quickly! -2.9814243887273477,-4.494029497183675,-8.422795422186937
+[20:37:13] [Server thread/WARN]: _ItsSam was kicked due to keepalive timeout!
+[20:37:13] [Server thread/INFO]: _ItsSam lost connection: Timed out
+[20:37:13] [Server thread/INFO]: [-] _ItsSam
+[20:37:34] [User Authenticator #2/INFO]: UUID of player _ItsSam is e085de08-dde4-371b-8b53-9e3baa457839
+[20:37:34] [Server thread/INFO]: _ItsSam[/127.133.1.147:56793] logged in with entity id 16812 at ([world]49.34045611444498, 71.47954490314677, 1943.3900311212767)
+[20:37:34] [Server thread/INFO]: [+] _ItsSam
+[20:37:39] [Async Chat Thread - #16/INFO]: [Not Secure] <_ItsSam> lagggg
+[20:38:11] [Server thread/WARN]: _ItsSam moved too quickly! -0.6852154036580416,0.0,-13.116774837127878
+[20:38:19] [Server thread/WARN]: _ItsSam was kicked due to keepalive timeout!
+[20:38:19] [Server thread/INFO]: _ItsSam lost connection: Timed out
+[20:38:19] [Server thread/INFO]: [-] _ItsSam
+[20:39:09] [User Authenticator #3/INFO]: UUID of player _ItsSam is e085de08-dde4-371b-8b53-9e3baa457839
+[20:39:09] [Server thread/INFO]: _ItsSam[/127.133.1.147:56137] logged in with entity id 17374 at ([world]45.59681249235982, 83.84235093033242, 1946.3856514990232)
+[20:39:09] [Server thread/INFO]: [+] _ItsSam
+[20:42:58] [Server thread/INFO]: Villager EntityVillager['Villager'/17378, uuid='c6c8d481-4aa2-46dd-9882-c10296ab81f8', l='ServerLevel[world]', x=44.33, y=80.00, z=1947.69, cpos=[2, 121], tl=8044, v=true] died, message: 'Villager was slain by _ItsSam'
+[20:42:59] [Server thread/INFO]: Villager EntityVillager['Villager'/17379, uuid='49b0b02a-4d57-412d-8488-d06b3fc75ff8', l='ServerLevel[world]', x=43.56, y=80.00, z=1947.52, cpos=[2, 121], tl=8121, v=true] died, message: 'Villager was slain by _ItsSam'
+[20:43:00] [Server thread/INFO]: Villager EntityVillager['Villager'/17376, uuid='ad471040-ae19-44b9-b66b-b234566152d0', l='ServerLevel[world]', x=43.45, y=80.00, z=1947.30, cpos=[2, 121], tl=8160, v=true] died, message: 'Villager was slain by _ItsSam'
+[20:43:01] [Server thread/INFO]: Villager EntityVillager['Villager'/17377, uuid='c959b5a5-7da7-4bbf-b9d1-12401cb56f02', l='ServerLevel[world]', x=41.68, y=80.00, z=1947.60, cpos=[2, 121], tl=8140, v=true] died, message: 'Villager was slain by _ItsSam'
+[20:43:06] [Server thread/INFO]: Villager EntityVillager['Villager'/4953, uuid='03341a47-6b92-4e94-9622-e39081c9fb49', l='ServerLevel[world_nether]', x=-2.39, y=57.00, z=-171.70, cpos=[-1, -11], tl=52518, v=true] died, message: 'Villager was slain by dieguito'
+[20:44:45] [Server thread/INFO]: Villager EntityVillager['Villager'/17383, uuid='efbd64a4-0f65-4c9e-b733-6e0a1a7d6864', l='ServerLevel[world]', x=42.82, y=80.00, z=1957.30, cpos=[2, 122], tl=10422, v=true] died, message: 'Villager was burnt to a crisp whilst fighting _ItsSam'
+[20:44:46] [Server thread/INFO]: Villager EntityVillager['Villager'/17386, uuid='871d297c-779e-4197-ac47-f26529521be5', l='ServerLevel[world]', x=44.57, y=80.00, z=1957.39, cpos=[2, 122], tl=10577, v=true] died, message: 'Villager was burnt to a crisp whilst fighting _ItsSam'
+[20:44:47] [Server thread/INFO]: Villager EntityVillager['Villager'/17385, uuid='57d72075-d8a3-4ca2-8b19-f63287aaad20', l='ServerLevel[world]', x=42.53, y=80.00, z=1957.68, cpos=[2, 122], tl=10616, v=true] died, message: 'Villager was slain by _ItsSam'
+[20:44:49] [Server thread/INFO]: Villager EntityVillager['Villager'/17384, uuid='239c649d-68fa-4cc6-84ca-f7adbec0f750', l='ServerLevel[world]', x=44.35, y=80.00, z=1957.55, cpos=[2, 122], tl=10605, v=true] died, message: 'Villager was slain by _ItsSam'
+[20:47:24] [Server thread/INFO]: Named entity EntityZombie['Dinnerbone'/19868, uuid='c1545add-54f9-436f-b304-f08fec562a76', l='ServerLevel[world]', x=43.70, y=78.91, z=1952.34, cpos=[2, 122], tl=429, v=true] died: Dinnerbone was slain by _ItsSam
+[20:48:41] [Server thread/INFO]: _ItsSam issued server command: /tag _ItsSam
+[20:48:46] [Server thread/INFO]: _ItsSam issued server command: /tag _ItsSam list
+[20:51:36] [Server thread/INFO]: _ItsSam issued server command: /enchant mending
+[20:51:44] [Server thread/INFO]: _ItsSam issued server command: /enchant mending
+[20:52:09] [Server thread/INFO]: _ItsSam issued server command: /enchant protection 4
+[20:52:20] [Server thread/INFO]: _ItsSam issued server command: /enchant unbreaking 3
+[20:52:33] [Server thread/INFO]: _ItsSam issued server command: /enchant aquaaffinity
+[20:52:42] [Server thread/INFO]: Villager EntityVillager['Villager'/19019, uuid='968ec7ed-454c-4779-9f06-59ae3e50aef8', l='ServerLevel[world]', x=46.75, y=82.00, z=-1288.55, cpos=[2, -81], tl=67292, v=true] died, message: 'Villager was slain by dieguito'
+[20:52:47] [Server thread/INFO]: _ItsSam issued server command: /enchant respiration 3
+[20:53:02] [Server thread/INFO]: _ItsSam issued server command: /enchant mending
+[20:53:25] [Server thread/INFO]: dieguito was slain by Iron Golem
+[20:53:27] [Server thread/INFO]: _ItsSam issued server command: /gamemode survival
+[20:53:53] [Server thread/INFO]: _ItsSam issued server command: /gamemode creative
+[20:54:47] [Server thread/INFO]: _ItsSam lost connection: Timed out
+[20:54:47] [Server thread/INFO]: [-] _ItsSam
+[20:55:15] [User Authenticator #4/INFO]: UUID of player _ItsSam is e085de08-dde4-371b-8b53-9e3baa457839
+[20:55:15] [Server thread/INFO]: _ItsSam[/127.133.1.147:43329] logged in with entity id 22988 at ([world]42.81515213121351, 80.5, 1956.581801854987)
+[20:55:15] [Server thread/INFO]: [+] _ItsSam
+[20:56:49] [Server thread/INFO]: _ItsSam issued server command: /gamemode survival
+[20:57:28] [Server thread/INFO]: _ItsSam issued server command: /tpa dieguito
+[20:57:42] [Server thread/INFO]: dieguito issued server command: /tpaccept
+[20:57:48] [Async Chat Thread - #18/INFO]: [Not Secure] <_ItsSam> joda hijo
+[20:57:49] [Async Chat Thread - #19/INFO]: [Not Secure] <dieguito> ke
+[20:58:00] [Async Chat Thread - #18/INFO]: [Not Secure] <_ItsSam> ya tienes full net otra vez
+[20:58:06] [Async Chat Thread - #19/INFO]: [Not Secure] <dieguito> ajajajaja
+[20:58:20] [Async Chat Thread - #18/INFO]: [Not Secure] <dieguito> equipado pa la guerra puro personal
+[21:00:06] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> parece semen
+[21:00:25] [Server thread/INFO]: _ItsSam issued server command: /give _ItsSam instantdamagearrow 64
+[21:00:49] [Async Chat Thread - #20/INFO]: [Not Secure] <dieguito> sapo
+[21:00:52] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> cuanto te saco
+[21:01:01] [Async Chat Thread - #20/INFO]: [Not Secure] <dieguito> pega otra vez
+[21:01:03] [Server thread/INFO]: _ItsSam issued server command: /enchant power 4
+[21:01:14] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> 1
+[21:01:20] [Async Chat Thread - #20/INFO]: [Not Secure] <_ItsSam> y sin armor
+[21:01:22] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> cuanto
+[21:01:36] [Async Chat Thread - #20/INFO]: [Not Secure] <_ItsSam> cuanto
+[21:01:38] [Async Chat Thread - #20/INFO]: [Not Secure] <dieguito> 8
+[21:01:46] [Async Chat Thread - #20/INFO]: [Not Secure] <_ItsSam> o sea, 4 coras
+[21:01:51] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> no
+[21:01:55] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> 8 corazones
+[21:01:59] [Async Chat Thread - #20/INFO]: [Not Secure] <_ItsSam> nojoda
+[21:02:04] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> cuanto te saco yo
+[21:02:14] [Server thread/INFO]: _ItsSam issued server command: /give _ItsSam instantdamagearrowii 5
+[21:02:43] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> cule casa jopo
+[21:02:51] [Async Chat Thread - #20/INFO]: [Not Secure] <dieguito> cuanto
+[21:03:22] [Server thread/INFO]: _ItsSam issued server command: /tp _ItsSam 0 120 0
+[21:03:23] [Async Chat Thread - #20/INFO]: [Not Secure] <dieguito> deja eso
+[21:03:36] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> me ecehn la culpa despues
+[21:04:03] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> te pega papi kamilo
+[21:04:09] [Async Chat Thread - #20/INFO]: [Not Secure] <dieguito> aro
+[21:04:16] [Server thread/INFO]: dieguito was slain by Iron Golem
+[21:04:21] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> njd
+[21:04:38] [Server thread/INFO]: _ItsSam has reached the goal [The Next Generation]
+[21:04:53] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> me hace mas el golem que tu
+[21:04:54] [Async Chat Thread - #20/INFO]: [Not Secure] <_ItsSam> habia dejado el huevo en el spawn jajaja
+[21:05:00] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> idiota xd
+[21:05:03] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> uy es q te gusta hablar monda
+[21:05:04] [Async Chat Thread - #20/INFO]: [Not Secure] <_ItsSam> pvp
+[21:05:06] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> ya
+[21:05:10] [Async Chat Thread - #20/INFO]: [Not Secure] <dieguito> AAJAJAJJA
+[21:05:13] [Async Chat Thread - #20/INFO]: [Not Secure] <dieguito> dale pue
+[21:05:26] [Async Chat Thread - #20/INFO]: [Not Secure] <_ItsSam> manda tp
+[21:05:31] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> ira
+[21:05:34] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> llega tu
+[21:05:36] [Async Chat Thread - #20/INFO]: [Not Secure] <_ItsSam> estoy en el spawn
+[21:05:39] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> gay
+[21:05:41] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> despues pa devolverme
+[21:05:52] [Async Chat Thread - #20/INFO]: [Not Secure] <_ItsSam> coloca /home
+[21:06:01] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> no tengo
+[21:06:04] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> colocas /sethome
+[21:06:07] [Async Chat Thread - #20/INFO]: [Not Secure] <dieguito> no me deja
+[21:06:11] [Server thread/INFO]: dieguito issued server command: /sethome
+[21:06:11] [Server thread/INFO]: [Essentials] dieguito was denied access to command.
+[21:06:17] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> no tengo permisos
+[21:06:34] [Server thread/INFO]: _ItsSam issued server command: /lp group user permission set essentials.home true
+[21:06:34] [luckperms-command-executor/INFO]: [LP] LOG > (_ItsSam) [G] (user)
+[21:06:34] [luckperms-command-executor/INFO]: [LP] LOG > permission set essentials.home true
+[21:06:37] [Netty Epoll Server IO #2/WARN]: _ItsSam sent out-of-order chat: 'prueba ahora': 1761599194 > 1761599189
+[21:06:37] [Server thread/INFO]: _ItsSam lost connection: Out-of-order chat packet received. Did your system time change?
+[21:06:37] [Server thread/INFO]: [-] _ItsSam
+[21:06:39] [User Authenticator #5/INFO]: UUID of player _ItsSam is e085de08-dde4-371b-8b53-9e3baa457839
+[21:06:39] [Server thread/INFO]: _ItsSam[/127.133.1.147:51955] logged in with entity id 26770 at ([world]-26.82211520356933, 79.0, -19.118841822002686)
+[21:06:39] [Server thread/INFO]: [+] _ItsSam
+[21:06:42] [Async Chat Thread - #20/INFO]: [Not Secure] <_ItsSam> prueba ahora
+[21:06:51] [Server thread/INFO]: dieguito issued server command: /sethome
+[21:06:51] [Server thread/INFO]: [Essentials] dieguito was denied access to command.
+[21:06:52] [Server thread/INFO]: _ItsSam issued server command: /lp group default permission set essentials.home true
+[21:06:52] [luckperms-command-executor/INFO]: [LP] LOG > (_ItsSam) [G] (default)
+[21:06:52] [luckperms-command-executor/INFO]: [LP] LOG > permission set essentials.home true
+[21:06:53] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> nada
+[21:07:05] [Server thread/INFO]: _ItsSam issued server command: /lp group default permission set essentials.sethome true
+[21:07:05] [luckperms-command-executor/INFO]: [LP] LOG > (_ItsSam) [G] (default)
+[21:07:05] [luckperms-command-executor/INFO]: [LP] LOG > permission set essentials.sethome true
+[21:07:11] [Server thread/INFO]: _ItsSam issued server command: /lp group user permission set essentials.sethome true
+[21:07:11] [luckperms-command-executor/INFO]: [LP] LOG > (_ItsSam) [G] (user)
+[21:07:11] [luckperms-command-executor/INFO]: [LP] LOG > permission set essentials.sethome true
+[21:07:12] [Netty Epoll Server IO #0/WARN]: _ItsSam sent out-of-order chat: 'y ahora': 1761599231 > 1761599224
+[21:07:12] [Server thread/INFO]: _ItsSam lost connection: Out-of-order chat packet received. Did your system time change?
+[21:07:12] [Server thread/INFO]: [-] _ItsSam
+[21:07:14] [User Authenticator #5/INFO]: UUID of player _ItsSam is e085de08-dde4-371b-8b53-9e3baa457839
+[21:07:14] [Server thread/INFO]: _ItsSam[/127.133.1.147:40461] logged in with entity id 26985 at ([world]-18.533854114048264, 78.0, -30.00736084865237)
+[21:07:14] [Server thread/INFO]: [+] _ItsSam
+[21:07:17] [Async Chat Thread - #20/INFO]: [Not Secure] <_ItsSam> y ahora
+[21:07:23] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> colocas /sethome
+[21:07:34] [Server thread/INFO]: dieguito issued server command: /sethome
+[21:07:39] [Server thread/INFO]: dieguito issued server command: /home
+[21:07:43] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> ahora si
+[21:07:49] [Server thread/INFO]: dieguito issued server command: /tpa _ItsSam
+[21:07:52] [Server thread/INFO]: _ItsSam issued server command: /tpaccept
+[21:08:33] [Server thread/INFO]: _ItsSam lost connection: Disconnected
+[21:08:33] [Server thread/INFO]: [-] _ItsSam
+[21:08:36] [Async Chat Thread - #20/INFO]: [Not Secure] <dieguito> AJJAJAJAJA
+[21:08:42] [Server thread/INFO]: [Not Secure] [Server] joa
+[21:08:45] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> gay
+[21:08:47] [Server thread/INFO]: [Not Secure] [Server] JAJAJJAJA
+[21:08:52] [Server thread/INFO]: [Not Secure] [Server] casi me matas mk
+[21:08:55] [Async Chat Thread - #22/INFO]: [Not Secure] <dieguito> puse agua
+[21:09:08] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /godmode _ItsSam
+[21:09:08] [Server thread/INFO]: Error: Player not found.
+[21:09:11] [User Authenticator #6/INFO]: UUID of player _ItsSam is e085de08-dde4-371b-8b53-9e3baa457839
+[21:09:11] [Server thread/INFO]: _ItsSam[/127.133.1.147:50405] logged in with entity id 27385 at ([world]18.671233702518503, 71.0, -1.5079578431514886)
+[21:09:11] [Server thread/INFO]: [+] _ItsSam
+[21:09:13] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /godmode _ItsSam
+[21:09:13] [Server thread/INFO]: God mode enabled.
+[21:09:22] [Server thread/INFO]: _ItsSam issued server command: /godmode
+[21:09:23] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> miedo
+[21:09:25] [Netty Epoll Server IO #3/WARN]: _ItsSam sent out-of-order chat: 'espera': 1761599362 > 1761599356
+[21:09:25] [Server thread/INFO]: _ItsSam lost connection: Out-of-order chat packet received. Did your system time change?
+[21:09:25] [Server thread/INFO]: [-] _ItsSam
+[21:09:26] [User Authenticator #6/INFO]: UUID of player _ItsSam is e085de08-dde4-371b-8b53-9e3baa457839
+[21:09:26] [Server thread/INFO]: _ItsSam[/127.133.1.147:34511] logged in with entity id 27414 at ([world]31.306458507144452, 69.0, -8.320528176882442)
+[21:09:26] [Server thread/INFO]: [+] _ItsSam
+[21:09:28] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> espera
+[21:09:37] [Async Chat Thread - #22/INFO]: [Not Secure] <dieguito> ???
+[21:09:46] [Server thread/INFO]: _ItsSam issued server command: /echest
+[21:10:02] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> ya pues
+[21:10:37] [Server thread/INFO]: dieguito was slain by _ItsSam
+[21:10:38] [Server thread/INFO]: _ItsSam was burnt to a crisp whilst fighting dieguito
+[21:10:45] [Async Chat Thread - #22/INFO]: [Not Secure] <dieguito> jodaa
+[21:10:46] [Server thread/INFO]: _ItsSam issued server command: /back
+[21:10:51] [Async Chat Thread - #23/INFO]: [Not Secure] <dieguito> xd
+[21:10:54] [Async Chat Thread - #23/INFO]: [Not Secure] <_ItsSam> nojodaaa
+[21:10:56] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> mk
+[21:10:59] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> que
+[21:11:00] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> manda tp
+[21:11:08] [Server thread/INFO]: dieguito issued server command: /tpa _ItsSam
+[21:11:11] [Server thread/INFO]: _ItsSam issued server command: /tpaccept
+[21:11:21] [Async Chat Thread - #23/INFO]: [Not Secure] <_ItsSam> me quedé sin escudo
+[21:11:22] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> jajaj
+[21:11:32] [Async Chat Thread - #23/INFO]: [Not Secure] <dieguito> ya hijo ya
+[21:11:35] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> sin escudo
+[21:12:04] [Server thread/INFO]: _ItsSam was burnt to a crisp whilst fighting dieguito
+[21:12:08] [Async Chat Thread - #23/INFO]: [Not Secure] <dieguito> gg ez
+[21:12:19] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> yo quisiera saber
+[21:12:24] [Async Chat Thread - #23/INFO]: [Not Secure] <_ItsSam> pq las cosas mias no se sueltan
+[21:12:29] [Server thread/INFO]: _ItsSam issued server command: /deop _ItsSam
+[21:12:29] [Server thread/INFO]: [_ItsSam: Made _ItsSam no longer a server operator]
+[21:12:29] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> cabron tiemes keep inventory
+[21:12:36] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> hazte el marica
+[21:12:43] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> como voy a tener keep individualmente
+[21:12:45] [Async Chat Thread - #24/INFO]: [Not Secure] <_ItsSam> gay
+[21:12:50] [Async Chat Thread - #24/INFO]: [Not Secure] <_ItsSam> si el keep es general
+[21:12:50] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> xd
+[21:12:53] [Server thread/INFO]: _ItsSam issued server command: /tpa dieguito
+[21:12:58] [Server thread/INFO]: dieguito issued server command: /tpaccept
+[21:13:16] [Async Chat Thread - #24/INFO]: [Not Secure] <dieguito> tengo hambre we
+[21:13:37] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> el casco esta a 131
+[21:14:08] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> aja cabron
+[21:14:54] [Server thread/INFO]: dieguito was burnt to a crisp whilst fighting _ItsSam
+[21:15:02] [Async Chat Thread - #24/INFO]: [Not Secure] <dieguito> odio tus espinas
+[21:15:03] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> jajaj
+[21:15:05] [Async Chat Thread - #24/INFO]: [Not Secure] <_ItsSam> ven a ver
+[21:15:08] [Async Chat Thread - #24/INFO]: [Not Secure] <dieguito> joda si eres gay
+[21:15:16] [Server thread/INFO]: dieguito issued server command: /tpa _ItsSam
+[21:15:25] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> aja
+[21:15:26] [Server thread/INFO]: _ItsSam issued server command: /tpaccept
+[21:15:33] [Netty Epoll Server IO #0/WARN]: _ItsSam sent out-of-order chat: 'habia un zombie': 1761599726 > 1761599725
+[21:15:33] [Server thread/INFO]: _ItsSam lost connection: Out-of-order chat packet received. Did your system time change?
+[21:15:33] [Server thread/INFO]: [-] _ItsSam
+[21:15:37] [User Authenticator #7/INFO]: UUID of player _ItsSam is e085de08-dde4-371b-8b53-9e3baa457839
+[21:15:37] [Server thread/INFO]: _ItsSam[/127.133.1.147:57019] logged in with entity id 29551 at ([world]14.876760772652453, 72.0, -8.020704681922085)
+[21:15:37] [Server thread/INFO]: [+] _ItsSam
+[21:15:37] [Async Chat Thread - #21/INFO]: [Not Secure] <dieguito> no me digas que el zombie cogio todo
+[21:15:39] [Async Chat Thread - #24/INFO]: [Not Secure] <_ItsSam> si
+[21:16:01] [Server thread/INFO]: _ItsSam issued server command: /home casa
+[21:16:05] [Server thread/INFO]: _ItsSam issued server command: /tphere dieguito
+[21:16:09] [Async Chat Thread - #24/INFO]: [Not Secure] <dieguito> JAJAJAJAJ
+[21:16:17] [Async Chat Thread - #24/INFO]: [Not Secure] <_ItsSam> joa
+[21:16:32] [Async Chat Thread - #24/INFO]: [Not Secure] <dieguito> joda hijo
+[21:17:07] [Async Chat Thread - #21/INFO]: [Not Secure] <_ItsSam> lagggg
+[21:17:14] [Server thread/WARN]: _ItsSam was kicked due to keepalive timeout!
+[21:17:14] [Server thread/INFO]: _ItsSam lost connection: Timed out
+[21:17:14] [Server thread/INFO]: [-] _ItsSam
+[21:17:17] [Async Chat Thread - #24/INFO]: [Not Secure] <dieguito> paga el internet
+[21:18:23] [Server thread/INFO]: dieguito issued server command: /home
+[21:24:42] [Server thread/INFO]: dieguito lost connection: Timed out
+[21:24:42] [Server thread/INFO]: [-] dieguito
+[21:24:52] [User Authenticator #8/INFO]: UUID of player dieguito is b22d7525-fd81-364c-87d0-a544806c759c
+[21:24:52] [Server thread/INFO]: dieguito[/127.243.140.69:33427] logged in with entity id 31016 at ([world]26.72260484456306, 72.0, -1294.558848806921)
+[21:24:52] [Server thread/INFO]: [+] dieguito
+[21:31:21] [Server thread/INFO]: Villager EntityVillager['Villager'/31914, uuid='7149ece4-5e31-4e8e-8a74-ccf29377b70d', l='ServerLevel[world]', x=51.74, y=82.00, z=-1291.17, cpos=[3, -81], tl=171538, v=true] died, message: 'Villager was slain by dieguito'
+[21:31:59] [Server thread/INFO]: dieguito lost connection: Disconnected
+[21:31:59] [Server thread/INFO]: [-] dieguito
+[21:33:51] [Server thread/INFO]: Stopping the server
+[21:33:51] [Server thread/INFO]: Stopping server
+[21:33:51] [Server thread/INFO]: [InventoryRollbackPlus] Disabling InventoryRollbackPlus v1.7.7
+[21:33:51] [Server thread/INFO]: [InventoryRollbackPlus] Setting shutdown state
+[21:33:51] [Server thread/INFO]: [InventoryRollbackPlus] Saving player inventories...
+[21:33:51] [Server thread/INFO]: [InventoryRollbackPlus] Done saving player inventories!
+[21:33:51] [Server thread/INFO]: [InventoryRollbackPlus] Plugin is disabled!
+[21:33:51] [Server thread/INFO]: [TAB] Disabling TAB v5.3.2
+[21:33:51] [Server thread/INFO]: [TAB] Disabled in 4ms
+[21:33:51] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.2
+[21:33:51] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
+[21:33:51] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.6
+[21:33:51] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[21:33:51] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.5.0
+[21:33:51] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[21:33:51] [Server thread/INFO]: [LuckPerms] Closing storage...
+[21:33:51] [Server thread/INFO]: [LuckPerms] Goodbye!
+[21:33:51] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.5.0
+[21:33:51] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[21:33:51] [Server thread/INFO]: Saving players
+[21:33:51] [Server thread/INFO]: Saving worlds
+[21:33:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21:33:51] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[21:33:51] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[21:33:51] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[21:33:51] [Server thread/INFO]: [ChunkHolderManager] Saved 2 block chunks, 90 entity chunks, 0 poi chunks in world 'world' in 0.05s
+[21:33:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21:33:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[21:33:51] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[21:33:51] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[21:33:51] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[21:33:51] [Server thread/INFO]: [ChunkHolderManager] Saved 21 block chunks, 92 entity chunks, 0 poi chunks in world 'world_nether' in 0.06s
+[21:33:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:33:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[21:33:51] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[21:33:51] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[21:33:51] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[21:33:51] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[21:33:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:33:51] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[21:33:51] [Server thread/INFO]: Flushing Chunk IO
+[21:33:51] [Server thread/INFO]: Closing Thread Pool
+[21:33:51] [Server thread/INFO]: Closing Server
